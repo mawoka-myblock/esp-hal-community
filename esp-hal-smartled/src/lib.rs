@@ -59,7 +59,7 @@ const RMT_RAM_ONE_LED: usize = 3 * 8;
 const SK68XX_CODE_PERIOD: u32 = 1250; // 800kHz
 const SK68XX_T0H_NS: u32 = 300; // 300ns per SK6812 datasheet, 400 per WS2812. Some require >350ns for T0H. Others <500ns for T0H.
 const SK68XX_T0L_NS: u32 = 2000;
-const SK68XX_T1H_NS: u32 = 700; // 900ns per SK6812 datasheet, 850 per WS2812. > 550ns is sometimes enough. Some require T1H >= 2 * T0H. Some require > 300ns T1L.
+const SK68XX_T1H_NS: u32 = 600; // 900ns per SK6812 datasheet, 850 per WS2812. > 550ns is sometimes enough. Some require T1H >= 2 * T0H. Some require > 300ns T1L.
 const SK68XX_T1L_NS: u32 = 2000;
 
 /// All types of errors that can happen during the conversion and transmission
